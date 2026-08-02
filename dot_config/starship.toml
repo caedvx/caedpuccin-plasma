@@ -1,0 +1,27 @@
+# Get a clean, instant prompt layout
+format = """
+$directory\
+$git_branch\
+$git_status\
+$character"""
+
+# Sits completely flush on one clean line
+add_newline = false
+
+[character]
+success_symbol = "[❯](bold magenta)"
+error_symbol = "[❯](bold red)"
+
+[directory]
+style = "bold magenta"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[git_branch]
+symbol = " "
+style = "bold dim white"
+format = "on [$symbol$branch]($style) "
+
+[git_status]
+style = "bold red"
+format = "[[[$all_status$ahead_behind]($style)]]"

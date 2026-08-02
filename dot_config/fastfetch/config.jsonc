@@ -1,0 +1,44 @@
+{
+  "$schema": "https://github.com",
+  "logo": {
+    "type": "builtin",
+    "source": "arch",
+    "padding": {
+      "right": 4,
+      "left": 2
+    },
+    "color": {
+      "1": "magenta",
+      "2": "magenta"
+    }
+  },
+  "display": {
+    "separator": "  ➜  ",
+    "color": {
+      "keys": "magenta",
+      "output": "white",
+      "title": "magenta"
+    }
+  },
+  "modules": [
+    "title",
+    "separator",
+    "os",
+    "kernel",
+    "uptime",
+    "packages",
+    "shell",
+    "de",
+    "wm",
+    "terminal",
+    "terminalfont",
+    "break",
+    "cpu",
+    "gpu",
+    "memory",
+    "disk",
+    "localip",
+    "break",
+    "colors"
+  ]
+}

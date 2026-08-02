@@ -1,0 +1,27 @@
+#
+# ~/.bashrc
+#
+
+# If not running interactively, don't do anything
+[[ $- != *i* ]] && return
+
+# System Aliases
+alias ls='ls --color=auto'
+alias grep='grep --color=auto'
+alias qchat='ollama run qwen3-chat --hidethinking'
+
+# Environment Variables
+export PATH="$HOME/.local/bin:$PATH"
+
+# Custom Core Fix Script
+code() {
+    pkill -9 -f /usr/share/code/code 2>/dev/null
+    sleep 2
+    command code "$@"
+}
+
+# Auto-Launch System Specs
+fastfetch
+
+# Prompt Engine Initialization (Must sit at the absolute bottom)
+eval "$(starship init bash)"
