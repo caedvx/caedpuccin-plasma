@@ -34,12 +34,12 @@ See `pkglist.txt` for pacman packages and `aurlist.txt` for AUR packages.
 **Quick path (automated)**
 
 ```bash
-curl -fsLS https://raw.githubusercontent.com/caedvx/chezmoi-rice/master/install.sh | bash
+curl -fsLS https://raw.githubusercontent.com/caedvx/caedpuccin-plasma/master/install.sh | bash
 ```
 
 Or with a specific repo URL:
 ```bash
-bash install.sh https://github.com/caedvx/chezmoi-rice.git
+bash install.sh https://github.com/caedvx/caedpuccin-plasma.git
 ```
 
 The script:
@@ -49,7 +49,7 @@ The script:
 
 **Manual path**
 
-1. Clone this repo: `git clone https://github.com/caedvx/chezmoi-rice.git ~/dotfiles`
+1. Clone this repo: `git clone https://github.com/caedvx/caedpuccin-plasma.git ~/dotfiles`
 2. Install [chezmoi](https://www.chezmoi.io/install/)
 3. Apply: `chezmoi init --apply ~/dotfiles`
 
