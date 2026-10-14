@@ -1,0 +1,11 @@
+configuration {
+  modi: "drun,run,window";
+  show-icons: true;
+  icon-theme: "Papirus-Dark";
+  display-drun: "APPS";
+  display-run: "RUN";
+  display-window: "WINDOWS";
+  drun-display-format: "{name}";
+  terminal: "ghostty";
+}
+@theme "odivm-graphite"

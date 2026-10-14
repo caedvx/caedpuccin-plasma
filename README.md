@@ -1,4 +1,6 @@
-# Arch Linux Rice
+# Arch Linux Rice — ODIVM Graphite
+
+The old Catppuccin setup lives on the `legacy-caedpuccin` branch.
 
 My desktop setup for Arch Linux. Managed with [chezmoi](https://www.chezmoi.io/).
 
@@ -8,12 +10,14 @@ My desktop setup for Arch Linux. Managed with [chezmoi](https://www.chezmoi.io/)
 - KDE Plasma 6 with Wayland
 - Hyprland tiling window manager
 - Ghostty terminal
-- Waybar for panels
+- Waybar, rofi, dunst, hyprlock/hypridle/hyprpaper
 
 **Visual**
-- Catppuccin Mocha theme throughout
-- Custom GTK and Qt colors
-- Papirus icons with Catppuccin variant
+- ODIVM Graphite: pure black (#000000) / white (#ffffff), no hue
+- KDE color scheme + global theme `ODIVM.Graphite`
+- Wallpapers + generator (`~/.local/share/wallpapers/ODIVM-Graphite/make-wallpaper.py`)
+- Firefox userChrome, Vencord theme, Ghostty theme
+- Custom VSCodium icon and launchers (VSCodium settings live in a separate repo)
 
 **Prompt & Shell**
 - Starship for shell prompt
@@ -34,7 +38,7 @@ See `pkglist.txt` for pacman packages and `aurlist.txt` for AUR packages.
 **Quick path (automated)**
 
 ```bash
-curl -fsLS https://raw.githubusercontent.com/caedvx/caedpuccin-plasma/master/install.sh | bash
+curl -fsLS https://raw.githubusercontent.com/caedvx/caedpuccin-plasma/main/install.sh | bash
 ```
 
 Or with a specific repo URL:
@@ -83,7 +87,9 @@ Before applying, edit these files to match your setup:
 
 - `dot_bashrc` — Shell config with aliases and starship init
 - `dot_config/starship.toml` — Shell prompt (clean, single line)
-- `dot_config/gtk-3.0/colors.css` — GTK theming with Catppuccin
+- `dot_config/gtk-3.0/colors.css` — GTK theming
+- `dot_config/hypr/hyprland.lua` — Hyprland config
+- `dot_config/waybar/` — bar config and style
 - `dot_config/ghostty/config` — Terminal config
 - `dot_config/fastfetch/config.jsonc` — System info display
 - `dot_config/private_kdeglobals` — KDE Plasma theme settings
@@ -91,9 +97,9 @@ Before applying, edit these files to match your setup:
 
 ## Theme
 
-Catppuccin Mocha (dark blue). Set across:
+ODIVM Graphite (max-contrast black/white). Set across:
 - GTK apps (settings.ini, colors.css)
-- Qt apps (kdeglobals, kvantumrc)
+- Qt apps (kdeglobals, ODIVMGraphite.colors)
 - SDDM login screen
 - Terminals and editors
 

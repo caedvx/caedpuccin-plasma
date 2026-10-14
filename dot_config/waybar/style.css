@@ -1,0 +1,77 @@
+/* ODIVM Graphite */
+@define-color bg      #000000;
+@define-color text    #ffffff;
+@define-color dim     rgba(255, 255, 255, 0.56);
+@define-color faint   rgba(255, 255, 255, 0.35);
+@define-color glass   rgba(255, 255, 255, 0.045);
+@define-color border  rgba(255, 255, 255, 0.11);
+@define-color danger  #f87171;
+@define-color warning #fbbf24;
+
+* {
+  font-family: "Geist Mono", "GeistMono Nerd Font", monospace;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  min-height: 0;
+  border: none;
+  border-radius: 0;
+}
+
+window#waybar {
+  background: rgba(10, 10, 10, 0.72);
+  border: 1px solid @border;
+  border-radius: 12px;
+  color: @dim;
+}
+
+tooltip {
+  background: rgba(17, 17, 17, 0.96);
+  border: 1px solid @border;
+  border-radius: 10px;
+}
+tooltip label { color: @text; letter-spacing: 0; }
+
+#custom-mark {
+  font-family: "Unbounded";
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.24em;
+  color: @text;
+  padding: 0 14px 0 16px;
+}
+
+#workspaces { padding: 0 4px; }
+#workspaces button {
+  color: @faint;
+  padding: 0 7px;
+  margin: 6px 1px;
+  border-radius: 7px;
+  background: transparent;
+  transition: all 300ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+#workspaces button:hover { color: @text; background: @glass; box-shadow: none; }
+#workspaces button.active { color: @bg; background: @text; }
+#workspaces button.urgent { color: @danger; }
+
+#window { color: @faint; padding: 0 12px; }
+
+#clock {
+  color: @text;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+}
+
+#tray, #language, #cpu, #memory, #network, #pulseaudio, #custom-power {
+  padding: 0 10px;
+}
+#pulseaudio.muted, #network.disconnected { color: @faint; }
+#cpu.warning, #memory.warning { color: @warning; }
+#cpu.critical, #memory.critical { color: @danger; }
+
+#custom-power {
+  color: @text;
+  padding: 0 16px 0 12px;
+  font-size: 13px;
+}
+#custom-power:hover { color: @danger; }

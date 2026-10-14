@@ -1,15 +1,16 @@
-# Theme tied directly to the flagship Catppuccin Mocha palette
-theme = "Catppuccin Mocha"
-font-family = "JetBrainsMono Nerd Font"
-font-size = 9
+# ODIVM Graphite
+theme = odivm-graphite
+font-family = GeistMono Nerd Font
+font-size = 10
+adjust-cell-height = 10%
 
-# Window Layout
-window-padding-x = 12
+window-padding-x = 14
 window-padding-y = 12
-background-opacity = 0.65
-background-blur-radius = 12
+window-padding-balance = true
+background-opacity = 0.88
+background-blur = 20
+unfocused-split-opacity = 0.8
 
-# Aesthetics & Cursor
 cursor-style = block
-cursor-color = #f5c2e7
-cursor-text = #1e1e2e
+cursor-style-blink = false
+mouse-hide-while-typing = true

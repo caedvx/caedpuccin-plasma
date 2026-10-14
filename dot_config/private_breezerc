@@ -1,2 +1,8 @@
+[Common]
+OutlineIntensity=OutlineOff
+
 [Style]
 MenuOpacity=30
+
+[Windeco]
+TitleAlignment=AlignCenterFullWidth

@@ -1,0 +1,77 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 34,
+  "margin-top": 6,
+  "margin-left": 6,
+  "margin-right": 6,
+  "spacing": 0,
+
+  "modules-left": ["custom/mark", "hyprland/workspaces", "hyprland/window"],
+  "modules-center": ["clock"],
+  "modules-right": ["tray", "hyprland/language", "cpu", "memory", "network", "pulseaudio", "custom/power"],
+
+  "custom/mark": {
+    "format": "ODIVM",
+    "tooltip": false,
+    "on-click": "rofi -show drun"
+  },
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": { "1": "1", "2": "2", "3": "3", "4": "4", "5": "5", "6": "6", "7": "7", "8": "8", "9": "9", "11": "1", "12": "2", "13": "3", "14": "4", "15": "5", "16": "6", "17": "7", "18": "8", "19": "9" },
+    "on-scroll-up": "~/.local/bin/odivm-ws cycle +1",
+    "on-scroll-down": "~/.local/bin/odivm-ws cycle -1"
+  },
+  "hyprland/window": {
+    "format": "{class}",
+    "max-length": 40,
+    "separate-outputs": true
+  },
+  "clock": {
+    "format": "{:%H:%M}",
+    "format-alt": "{:%a %d %b  %H:%M}",
+    "tooltip-format": "<tt>{calendar}</tt>",
+    "calendar": {
+      "mode": "month",
+      "weeks-pos": "left",
+      "format": {
+        "months": "<span color='#ffffff'><b>{}</b></span>",
+        "weeks": "<span color='#707070'>{}</span>",
+        "weekdays": "<span color='#a3a3a3'>{}</span>",
+        "today": "<span color='#000000' background='#ffffff'><b>{}</b></span>"
+      }
+    }
+  },
+  "hyprland/language": {
+    "format": "{short}"
+  },
+  "cpu": {
+    "format": "CPU {usage}%",
+    "interval": 3
+  },
+  "memory": {
+    "format": "MEM {percentage}%",
+    "interval": 5
+  },
+  "network": {
+    "format-wifi": "NET {signalStrength}%",
+    "format-ethernet": "NET ETH",
+    "format-disconnected": "NET OFF",
+    "tooltip-format": "{ifname}  {ipaddr}"
+  },
+  "pulseaudio": {
+    "format": "VOL {volume}%",
+    "format-muted": "VOL MUTE",
+    "on-click": "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+    "scroll-step": 5
+  },
+  "tray": {
+    "icon-size": 15,
+    "spacing": 10
+  },
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": false,
+    "on-click": "~/.local/bin/odivm-power"
+  }
+}

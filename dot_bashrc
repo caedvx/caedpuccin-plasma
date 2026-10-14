@@ -13,11 +13,30 @@ alias qchat='ollama run qwen3-chat --hidethinking'
 # Environment Variables
 export PATH="$HOME/.local/bin:$PATH"
 
-# Custom Core Fix Script
-code() {
-    pkill -9 -f /usr/share/code/code 2>/dev/null
-    sleep 2
-    command code "$@"
+wire() {
+    case "$1" in
+        in)
+            echo "Locking in..."
+            # Launch VS Code explicitly treating the path as a folder
+            code --folder-uri "file://$HOME/Projects/Coding/ODIVM" > /dev/null 2>&1 &
+
+            # Start focus audio in background if not already playing
+            if ! pgrep -f "focus_track.mp3" > /dev/null; then
+                mpv --no-video --loop-file=inf ~/Music/focus_track.mp3 > /dev/null 2>&1 &
+            fi
+            ;;
+        out)
+            echo "Unwiring..."
+            # Stop the music daemon
+            pkill -f "focus_track.mp3" || pkill mpv
+
+            # Close VS Code windows
+            pkill code
+            ;;
+        *)
+            echo "Usage: wire {in|out}"
+            ;;
+    esac
 }
 
 # Auto-Launch System Specs

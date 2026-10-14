@@ -3,21 +3,18 @@
   "logo": {
     "type": "builtin",
     "source": "arch",
+    "color": { "1": "bright_white", "2": "bright_white" },
     "padding": {
       "right": 4,
       "left": 2
-    },
-    "color": {
-      "1": "magenta",
-      "2": "magenta"
     }
   },
   "display": {
-    "separator": "  ➜  ",
+    "separator": "   ",
     "color": {
-      "keys": "magenta",
-      "output": "white",
-      "title": "magenta"
+      "keys": "38;2;112;112;110",
+      "output": "bright_white",
+      "title": "bright_white"
     }
   },
   "modules": [

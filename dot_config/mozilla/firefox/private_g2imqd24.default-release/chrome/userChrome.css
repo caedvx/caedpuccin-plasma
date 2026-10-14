@@ -1,0 +1,125 @@
+/* ODIVM Graphite */
+:root {
+  --og-bg: #000000;
+  --og-deep: #000000;
+  --og-panel: #0a0a0a;
+  --og-raised: #121212;
+  --og-text: #ffffff;
+  --og-dim: rgba(255, 255, 255, 0.56);
+  --og-faint: rgba(255, 255, 255, 0.35);
+  --og-glass: rgba(255, 255, 255, 0.045);
+  --og-border: rgba(255, 255, 255, 0.11);
+
+  --lwt-accent-color: var(--og-deep) !important;
+  --lwt-accent-color-inactive: var(--og-deep) !important;
+  --lwt-text-color: var(--og-dim) !important;
+  --lwt-frame: var(--og-deep) !important;
+  --lwt-background-tab-separator-color: transparent !important;
+  --toolbox-bgcolor: var(--og-deep) !important;
+  --toolbox-bgcolor-inactive: var(--og-deep) !important;
+  --toolbox-textcolor: var(--og-text) !important;
+  --toolbox-textcolor-inactive: var(--og-dim) !important;
+
+  --toolbar-bgcolor: var(--og-bg) !important;
+  --toolbar-color: var(--og-text) !important;
+  --toolbar-field-background-color: var(--og-glass) !important;
+  --toolbar-field-color: var(--og-text) !important;
+  --toolbar-field-border-color: var(--og-border) !important;
+  --toolbar-field-focus-background-color: var(--og-panel) !important;
+  --toolbar-field-focus-color: var(--og-text) !important;
+  --toolbar-field-focus-border-color: rgba(255, 255, 255, 0.35) !important;
+  --toolbarbutton-hover-background: rgba(255, 255, 255, 0.07) !important;
+  --toolbarbutton-active-background: rgba(255, 255, 255, 0.12) !important;
+  --toolbarbutton-icon-fill: var(--og-text) !important;
+  --toolbarbutton-icon-fill-attention: var(--og-text) !important;
+  --chrome-content-separator-color: var(--og-border) !important;
+  --urlbar-box-bgcolor: var(--og-glass) !important;
+  --urlbar-box-hover-bgcolor: rgba(255, 255, 255, 0.08) !important;
+  --urlbar-box-focus-bgcolor: rgba(255, 255, 255, 0.1) !important;
+  --urlbar-box-text-color: var(--og-text) !important;
+  --urlbarView-highlight-background: #ffffff !important;
+  --urlbarView-highlight-color: #000000 !important;
+  --urlbarView-separator-color: var(--og-border) !important;
+
+  --tab-selected-bgcolor: rgba(255, 255, 255, 0.08) !important;
+  --tab-selected-textcolor: var(--og-text) !important;
+  --tab-hover-background-color: rgba(255, 255, 255, 0.045) !important;
+  --tab-loading-fill: var(--og-text) !important;
+  --tab-attention-icon-color: var(--og-text) !important;
+  --tab-border-radius: 8px !important;
+  --tab-selected-outline-color: var(--og-border) !important;
+  --focus-outline-color: rgba(255, 255, 255, 0.55) !important;
+  --identity-btn-hover-background: rgba(255, 255, 255, 0.07) !important;
+
+  --sidebar-background-color: var(--og-deep) !important;
+  --sidebar-text-color: var(--og-text) !important;
+  --sidebar-border-color: var(--og-border) !important;
+  --tabpanel-background-color: var(--og-bg) !important;
+
+  --arrowpanel-background: var(--og-panel) !important;
+  --arrowpanel-color: var(--og-text) !important;
+  --arrowpanel-border-color: var(--og-border) !important;
+  --arrowpanel-dimmed: rgba(255, 255, 255, 0.06) !important;
+  --arrowpanel-dimmed-further: rgba(255, 255, 255, 0.1) !important;
+  --panel-separator-color: var(--og-border) !important;
+  --panel-item-hover-bgcolor: rgba(255, 255, 255, 0.07) !important;
+
+  --button-background-color: var(--og-raised) !important;
+  --button-background-color-hover: #191919 !important;
+  --button-text-color: var(--og-text) !important;
+  --button-primary-bgcolor: #ffffff !important;
+  --button-primary-hover-bgcolor: #ffffff !important;
+  --button-primary-active-bgcolor: #e0e0e0 !important;
+  --button-primary-color: #000000 !important;
+  --button-background-color-primary: #ffffff !important;
+  --button-background-color-primary-hover: #ffffff !important;
+  --button-text-color-primary: #000000 !important;
+  --color-accent-primary: #ffffff !important;
+  --color-accent-primary-hover: #ffffff !important;
+  --color-accent-primary-active: #e0e0e0 !important;
+  --link-color: #f5f5f5 !important;
+}
+
+#navigator-toolbox {
+  background-color: var(--og-deep) !important;
+  border-bottom: 1px solid var(--og-border) !important;
+}
+#nav-bar, #PersonalToolbar {
+  background: var(--og-bg) !important;
+  border-top: none !important;
+  box-shadow: none !important;
+}
+#TabsToolbar, #titlebar { background: var(--og-deep) !important; }
+
+.tabbrowser-tab[selected] .tab-background {
+  background: var(--tab-selected-bgcolor) !important;
+  box-shadow: inset 0 0 0 1px var(--og-border) !important;
+}
+.tab-label { font-family: "Geist", sans-serif !important; }
+.tabbrowser-tab:not([selected]) .tab-label { color: var(--og-dim) !important; }
+
+#urlbar-background, #searchbar {
+  border: 1px solid var(--og-border) !important;
+  border-radius: 10px !important;
+}
+#urlbar[focused] > #urlbar-background {
+  outline: 1px solid rgba(255, 255, 255, 0.35) !important;
+  outline-offset: -1px !important;
+}
+#urlbar-input, .urlbarView { font-family: "Geist", sans-serif !important; }
+
+menupopup, panel {
+  --panel-background: var(--og-panel) !important;
+  --panel-color: var(--og-text) !important;
+  --panel-border-color: var(--og-border) !important;
+  --panel-border-radius: 10px !important;
+}
+menupopup menuitem[_moz-menuactive], menupopup menu[_moz-menuactive] {
+  background-color: rgba(255, 255, 255, 0.08) !important;
+  color: var(--og-text) !important;
+}
+
+#sidebar-box, #sidebar-main, sidebar-main {
+  background-color: var(--og-deep) !important;
+}
+#tabbrowser-tabpanels, browser { background-color: var(--og-bg) !important; }

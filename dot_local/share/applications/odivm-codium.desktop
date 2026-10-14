@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=ODIVM (VSCodium)
+Exec=/usr/bin/codium /home/caedvx/Projects/Coding/ODIVM
+Icon=odivm-codium-odivm
+Terminal=false
+Categories=Development;IDE;

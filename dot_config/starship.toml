@@ -9,22 +9,22 @@ $character"""
 add_newline = false
 
 [character]
-success_symbol = "[❯](bold magenta)"
-error_symbol = "[❯](bold red)"
+success_symbol = "[❯](bold #ffffff)"
+error_symbol = "[❯](bold #f87171)"
 
 [directory]
-style = "bold magenta"
+style = "bold #ffffff"
 truncation_length = 3
 truncation_symbol = "…/"
 
 [git_branch]
 symbol = " "
-style = "bold dim white"
+style = "#a3a3a3"
 format = "on [$symbol$branch]($style) "
 
 [git_status]
 format = '[$all_status$ahead_behind]($style) '
-style = 'bold red'
+style = "#f87171"
 conflicted = '='
 ahead = '⇡${count}'
 behind = '⇣${count}'

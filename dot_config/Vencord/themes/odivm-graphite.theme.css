@@ -1,0 +1,147 @@
+/**
+ * @name ODIVM Graphite
+ * @author ODIVM
+ * @description Black, white and greys, from odivm.com
+ * @version 1.0.0
+ */
+
+
+:root {
+  --og-bg: #000000;
+  --og-deep: #000000;
+  --og-panel: #070707;
+  --og-raised: #0e0e0e;
+  --og-high: #151515;
+  --og-text: #ffffff;
+  --og-body: #ededed;
+  --og-dim: #a3a3a3;
+  --og-faint: #707070;
+  --og-border: rgba(255, 255, 255, 0.11);
+  --og-hover: rgba(255, 255, 255, 0.05);
+  --og-active: rgba(255, 255, 255, 0.09);
+  --font-primary: "Geist", "gg sans", sans-serif;
+  --font-display: "Geist", "gg sans", sans-serif;
+  --font-headline: "Unbounded", "Geist", sans-serif;
+  --font-code: "Geist Mono", "GeistMono Nerd Font", monospace;
+}
+
+.theme-dark, .theme-darker, .theme-midnight, .visual-refresh.theme-dark, .visual-refresh .theme-dark {
+  /* visual refresh tokens */
+  --background-base-lowest: var(--og-deep) !important;
+  --background-base-lower: var(--og-bg) !important;
+  --background-base-low: var(--og-panel) !important;
+  --background-surface-high: var(--og-raised) !important;
+  --background-surface-higher: var(--og-high) !important;
+  --background-surface-highest: #1a1a1a !important;
+  --chat-background-default: var(--og-bg) !important;
+  --app-frame-background: var(--og-deep) !important;
+  --app-frame-border: var(--og-border) !important;
+  --border-subtle: var(--og-border) !important;
+  --border-normal: rgba(255, 255, 255, 0.14) !important;
+  --border-strong: rgba(255, 255, 255, 0.2) !important;
+  --border-faint: rgba(255, 255, 255, 0.06) !important;
+  --background-mod-subtle: var(--og-hover) !important;
+  --background-mod-normal: var(--og-active) !important;
+  --background-mod-strong: rgba(255, 255, 255, 0.13) !important;
+  --modal-background: var(--og-panel) !important;
+  --modal-footer-background: var(--og-bg) !important;
+  --input-background: rgba(255, 255, 255, 0.045) !important;
+  --input-border: var(--og-border) !important;
+  --chat-input-container-background: var(--og-panel) !important;
+
+  /* classic tokens */
+  --background-primary: var(--og-bg) !important;
+  --background-secondary: var(--og-deep) !important;
+  --background-secondary-alt: var(--og-panel) !important;
+  --background-tertiary: var(--og-deep) !important;
+  --background-floating: var(--og-panel) !important;
+  --background-nested-floating: var(--og-raised) !important;
+  --background-accent: var(--og-high) !important;
+  --background-message-hover: rgba(255, 255, 255, 0.025) !important;
+  --background-modifier-hover: var(--og-hover) !important;
+  --background-modifier-active: var(--og-active) !important;
+  --background-modifier-selected: var(--og-active) !important;
+  --background-modifier-accent: var(--og-border) !important;
+  --channeltextarea-background: var(--og-panel) !important;
+  --modal-footer-background: var(--og-bg) !important;
+  --deprecated-card-bg: var(--og-panel) !important;
+  --home-background: var(--og-bg) !important;
+  --bg-overlay-chat: var(--og-bg) !important;
+  --bg-overlay-app-frame: var(--og-deep) !important;
+  --bg-base-primary: var(--og-bg) !important;
+  --bg-base-secondary: var(--og-deep) !important;
+  --bg-base-tertiary: var(--og-deep) !important;
+  --bg-surface-overlay: var(--og-panel) !important;
+  --bg-surface-raised: var(--og-raised) !important;
+  --bg-mod-faint: var(--og-hover) !important;
+  --bg-mod-subtle: var(--og-hover) !important;
+  --bg-mod-strong: var(--og-active) !important;
+  --scrollbar-auto-thumb: rgba(255, 255, 255, 0.1) !important;
+  --scrollbar-thin-thumb: rgba(255, 255, 255, 0.1) !important;
+  --scrollbar-auto-track: transparent !important;
+
+  /* text */
+  --text-default: var(--og-body) !important;
+  --text-normal: var(--og-body) !important;
+  --text-strong: var(--og-text) !important;
+  --text-muted: var(--og-dim) !important;
+  --text-subtle: var(--og-dim) !important;
+  --text-link: #f5f5f5 !important;
+  --header-primary: var(--og-text) !important;
+  --header-secondary: var(--og-dim) !important;
+  --channels-default: var(--og-dim) !important;
+  --channel-icon: var(--og-dim) !important;
+  --interactive-normal: var(--og-dim) !important;
+  --interactive-hover: var(--og-text) !important;
+  --interactive-active: var(--og-text) !important;
+  --interactive-muted: var(--og-faint) !important;
+  --icon-default: var(--og-dim) !important;
+  --icon-strong: var(--og-text) !important;
+  --icon-muted: var(--og-faint) !important;
+  --text-positive: #6ee7b7 !important;
+  --text-warning: #fbbf24 !important;
+  --text-danger: #f87171 !important;
+
+  /* accent = ink */
+  --brand-experiment: #ffffff !important;
+  --brand-500: #ffffff !important;
+  --brand-560: #ffffff !important;
+  --brand-600: #e0e0e0 !important;
+  --brand-360: #ffffff !important;
+  --brand-260: #ffffff !important;
+  --control-brand-foreground: #ffffff !important;
+  --control-brand-foreground-new: #ffffff !important;
+  --button-filled-brand-background: #ffffff !important;
+  --button-filled-brand-background-hover: #ffffff !important;
+  --button-filled-brand-background-active: #e0e0e0 !important;
+  --button-filled-brand-text: #000000 !important;
+  --button-filled-brand-text-hover: #000000 !important;
+  --mention-foreground: #ffffff !important;
+  --mention-background: rgba(255, 255, 255, 0.12) !important;
+  --info-help-foreground: #ffffff !important;
+  --status-danger: #f87171 !important;
+  --status-positive: #6ee7b7 !important;
+  --status-warning: #fbbf24 !important;
+  --focus-primary: rgba(255, 255, 255, 0.55) !important;
+}
+
+/* buttons that hardcode brand white text */
+[class*="colorBrand_"], [class*="lookFilled_"][class*="colorBrand_"] {
+  color: #000000 !important;
+}
+[class*="colorBrand_"] svg, [class*="colorBrand_"] [class*="contents_"] { color: #000000 !important; }
+
+/* unread pill + selected server indicator */
+[class*="unread_"], [class*="item_"][class*="pill"] span { background-color: #ffffff !important; }
+
+/* mentioned messages */
+[class*="mentioned_"] {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+[class*="mentioned_"]::before { background-color: #ffffff !important; }
+
+/* code blocks */
+code, pre, [class*="codeContainer_"] { font-family: var(--font-code) !important; }
+.theme-dark code.inline, .theme-dark .hljs { background: var(--og-panel) !important; }
+
+::selection { background: #ffffff; color: #000000; }

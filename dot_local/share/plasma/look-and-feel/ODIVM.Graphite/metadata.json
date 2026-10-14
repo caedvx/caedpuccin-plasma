@@ -1,0 +1,13 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel",
+    "KPlugin": {
+        "Authors": [{ "Name": "ODIVM" }],
+        "Category": "",
+        "Description": "Graphite: black, white and greys, from odivm.com",
+        "Id": "ODIVM.Graphite",
+        "License": "GPL-2.0+",
+        "Name": "ODIVM Graphite",
+        "Version": "1.0"
+    },
+    "X-Plasma-APIVersion": "2"
+}

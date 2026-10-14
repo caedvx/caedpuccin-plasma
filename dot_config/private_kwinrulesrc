@@ -1,0 +1,21 @@
+[491a7834-f2d5-4834-b048-3917b7b07dbe]
+Description=Application settings for com.mitchellh.ghostty
+size=900,700
+sizerule=3
+wmclass=ghostty com.mitchellh.ghostty
+wmclasscomplete=true
+wmclassmatch=1
+
+[General]
+count=2
+rules=491a7834-f2d5-4834-b048-3917b7b07dbe,b2d6cf3b-0986-437b-aca6-b5c4bc3f6948
+
+[b2d6cf3b-0986-437b-aca6-b5c4bc3f6948]
+Description=FirefoxBlur
+Enabled=false
+opacityactive=85
+opacityactiverule=2
+opacityinactive=85
+opacityinactiverule=2
+wmclass=firefox
+wmclassmatch=1

@@ -1,3 +1,7 @@
 [Daemon]
 Autolock=false
 Timeout=0
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=file:///home/caedvx/.local/share/wallpapers/ODIVM-Graphite/graphite-mark-1920x1080.png
+PreviewImage=file:///home/caedvx/.local/share/wallpapers/ODIVM-Graphite/graphite-mark-1920x1080.png
